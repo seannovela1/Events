@@ -8,3 +8,11 @@ function handleButtonClick(){
 }
 // Add the event listener to the button
 button.addEventListener('click', handleButtonClick);
+// Get the link element
+const link = document.getElementById('myLink');
+// Define the event listener for the link
+function handleLinkClick(event){
+    event.preventDefault();  // Prevent the link from navigating
+    alert("No distractions! I’m coding!");  // Show alert
+}
+link.addEventListener('click', handleLinkClick);
